@@ -35,6 +35,7 @@
         if (inputElement && titleElement) {
           inputElement.addEventListener('keypress', e => {
             titleElement.innerHTML = e.target.value;
+            document.title = e.target.value;
           });
         }
       });
