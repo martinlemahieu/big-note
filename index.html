@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BIG NOTE</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-size: 16px;
+        text-align: center;
+        color: #f8f8f8;
+        background-color: #202020;
+        padding-top: 10%;
+      }
+      
+      h1 {
+        font-size: 96px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" value="BIG NOTE" autofocus>
+    <h1>BIG NOTE</h1>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const inputElement = document.querySelector('input');
+        const titleElement = document.querySelector('h1');
+        
+        if (inputElement && titleElement) {
+          inputElement.addEventListener('change', e => {
+            titleElement.innerHTML = e.target.value;
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
