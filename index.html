@@ -33,7 +33,7 @@
         const titleElement = document.querySelector('h1');
         
         if (inputElement && titleElement) {
-          inputElement.addEventListener('keypress', e => {
+          inputElement.addEventListener('keyup', e => {
             titleElement.innerHTML = e.target.value;
             document.title = e.target.value;
           });
