@@ -1,2 +1,2 @@
-# big-note
+# BIG NOTE
 A BIG NOTE
